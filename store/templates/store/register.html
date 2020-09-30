@@ -1,0 +1,43 @@
+{% extends 'store/base.html' %}
+{% block content %}
+<h1>Sign up</h1>
+    <div class="container">
+        <div class="p-4 m-4">
+            <div class="col-lg-8">
+                <form action="/"method="POST">
+                    <div class="form-group">
+                        <label >Email address</label>
+                        <input type="email" class="form-control" name="email" id="email">
+                        <small id="emailhelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label >Password</label>
+                        <input type="password" class="form-control"name="password" id="password">
+                        <small id="passwordhelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label >first name</label>
+                        <input type="text" class="form-control"name="firstname" id="firstname">
+                        <small id="help" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label >last name</label>
+                        <input type="text" class="form-control"name="last name" id="last name">
+                        <small id="pass" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+
+                </form>
+                <div class="form-group">
+                    <input class="btn btn-sm btn-success" type='submit' value="create account">
+
+                </div>
+            </div>
+        
+        </div>
+        
+        
+        
+    </div>
+
+{% endblock content %}
